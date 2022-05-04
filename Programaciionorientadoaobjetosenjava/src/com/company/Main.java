@@ -10,6 +10,8 @@ public class Main {
         myDoctor.name = "edwin gallego";
         myDoctor.speciality= "medico del  amor.";
         myDoctor.showName();
+        myDoctor.showId();
+        System.out.println(myDoctor.id);
         System.out.println("hola  tqm");
     }
 }
