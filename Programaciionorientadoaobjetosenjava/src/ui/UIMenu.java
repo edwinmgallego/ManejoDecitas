@@ -16,6 +16,7 @@ public class UIMenu
         System.out.println("0. Salir");
 
         Scanner sc = new Scanner(System.in);
+
         response = Integer.valueOf(sc.nextLine());
 
         switch (response){
