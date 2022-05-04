@@ -1,4 +1,4 @@
-package com.company;
+import ui.UIMenu;
 
 public class Main {
 
@@ -7,10 +7,20 @@ public class Main {
 
         Doctor myDoctor;
         myDoctor = new Doctor();
+
+
+
+
         myDoctor.name = "edwin gallego";
         myDoctor.speciality= "medico del  amor.";
-        myDoctor.showName();
-        myDoctor.showId();
+
+
+        //myDoctor.showName();
+        //myDoctor.showId();
+        Doctor myDoctorAnn= new Doctor();
+        //myDoctor.showId();
+        UIMenu.showMenu();
+
         System.out.println(myDoctor.id);
         System.out.println("hola  tqm");
     }
