@@ -8,10 +8,10 @@ public class Patient {
     double height;
     String blood;
 
-    public void patientPersonalData(){
-
-    }
-
+   Patient(String name, String email ){
+       this.name= name;
+       this.name =email;
+   }
     public void showPatientPersonalData(String name, String Email, String address, String phoneNumber, String birthday){
     this.name=name;
     this.Email= Email;
@@ -31,6 +31,7 @@ public class Patient {
     }
 
     public void  showPatientMedicalData(String blood,String weight, double height){
+
         System.out.println("tipo de  sangre: "+ blood);
         System.out.println(" peso: "+ weight);
         System.out.println("height: "+ height);
