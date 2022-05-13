@@ -5,23 +5,10 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Doctor myDoctor;
-        myDoctor = new Doctor();
+        Doctor myDoctor= new Doctor("Edwin Mauricio Gallego","medico del  amor");
+        //UIMenu.showMenu();
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
 
-
-
-
-        myDoctor.name = "edwin gallego";
-        myDoctor.speciality= "medico del  amor.";
-
-
-        //myDoctor.showName();
-        //myDoctor.showId();
-        Doctor myDoctorAnn= new Doctor();
-        //myDoctor.showId();
-        UIMenu.showMenu();
-
-        System.out.println(myDoctor.id);
-        System.out.println("hola  tqm");
     }
 }
