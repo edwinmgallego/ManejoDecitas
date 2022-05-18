@@ -1,16 +1,16 @@
 public class Patient {
-    String name;
-    String Email;
-    String address;
-    String phoneNumber;
-    String birthday;
-    String weight;
-    double height;
+    private String name;
+    private String Email;
+    private String address;
+    private String phoneNumber;
+    private String birthday;
+    private double weight;  //solo se pude  modificar  en la clase
+    private double height; //solo se pude  modificar  en la clase
     String blood;
 
    Patient(String name, String email ){
        this.name= name;
-       this.name =email;
+       this.Email =email;
    }
     public void showPatientPersonalData(String name, String Email, String address, String phoneNumber, String birthday){
     this.name=name;
@@ -37,5 +37,17 @@ public class Patient {
         System.out.println("height: "+ height);
 
     }
+
+    public void setName(String name){
+       this.name= name;
+    }
+    public void setWeight(double weight){
+       this.weight= weight;
+    }
+
+    public String getWeight(){
+       return this.weight + " Kg. ";
+    }
+
 
 }
