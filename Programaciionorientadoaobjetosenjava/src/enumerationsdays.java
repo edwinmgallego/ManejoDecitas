@@ -1,5 +1,5 @@
 public class enumerationsdays {
-    public enum Day {
+    /*public enum Day {
         SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
         THURSDAY, FRIDAY, SATURDAY
     }
@@ -18,6 +18,6 @@ switch (day) {
             System.out.println(“Midweek are so-so”);
             break;
 
-    }
+    }*/
 
 }
