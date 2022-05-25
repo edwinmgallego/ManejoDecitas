@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -6,7 +8,33 @@ public class Doctor {
     static int id = 0; //Autoincrement
     private String name;
     private String email;
-    private String speciality;
+    private String address;
+    private String PhoneNumber;
+
+    private String speciality ;
+
+
+    //Usaremos enum cada vez que necesitemos representar un conjunto fijo de constantes. Por ejemplo los días de la semana.
+
+    /*public enum Day {
+        MONDAY("Lunes");
+        TUESDAY("Jueves");
+        FRIDAY("Viernes");
+        SATURDAY("Sábado");
+        SUNDAY("Domingo");
+
+        private String spanish;
+
+        private Day(String s) {
+            spanish = s;
+        }
+
+        private String getSpanish() {
+            return spanish;
+        }
+
+         System.out.println(Day.MONDAY);
+    }*/
 
 
     Doctor(){
