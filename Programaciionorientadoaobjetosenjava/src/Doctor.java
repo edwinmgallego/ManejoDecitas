@@ -1,73 +1,44 @@
 import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    //Atributos
-    static int id = 0; //Autoincrement
-    private String name;
-    private String email;
-    private String address;
-    private String PhoneNumber;
+public class Doctor extends user {
+    //Atributo
+    /*
+    Super indica que una variable o método es de la clase padre, la superclase de cual heredan nuestras subclases, solo la usamos cuando aplicamos herencia.
 
-    private String speciality ;
+Además, podemos llamar al constructor de la clase padre desde sus diferentes subclases usando super(); y enviando los argumentos que sean necesarios.
 
+Por otro lado, this nos permite especificar que nuestras variables están señalando a la misma clase donde estamos trabajando, ya sea una clase normal, anidada, subclase o superclase.
+    * */
+    private String speciality;
 
-    //Usaremos enum cada vez que necesitemos representar un conjunto fijo de constantes. Por ejemplo los días de la semana.
-
-    /*public enum Day {
-        MONDAY("Lunes");
-        TUESDAY("Jueves");
-        FRIDAY("Viernes");
-        SATURDAY("Sábado");
-        SUNDAY("Domingo");
-
-        private String spanish;
-
-        private Day(String s) {
-            spanish = s;
-        }
-
-        private String getSpanish() {
-            return spanish;
-        }
-
-         System.out.println(Day.MONDAY);
-    }*/
-
-
-    Doctor(){
-        System.out.println("Construyendo el Objeto Doctor");
-    }
-
-    Doctor(String name, String speciality){
+    Doctor(String name, String email){
+        super(name,email);
         System.out.println("El nombre del Doctor asignado es: " + name);
-        id++;
-        this.name = name;
         this.speciality = speciality;
     }
 
-    //Comportamientos
-    public void showName(){
-        System.out.println(name);
+    public String getSpeciality() {
+        return speciality;
     }
 
-    public void showId(){
-        System.out.println("ID Doctor: " + id);
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
+
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
-    public void addAvailableAppointment(Date date, String time){//metodo   publico  donde  se  recibe la  fecha  y  hora   ,  mi primer  ecuentro con colecciones
+    public void addAvailableAppointment(Date date, String time){
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
 
-    public ArrayList<AvailableAppointment> getAvailableAppointments(){// nos  devuelve    una lista  con la  citas  de los   doctores
+    public ArrayList<AvailableAppointment> getAvailableAppointments(){
         return availableAppointments;
     }
 
 
-//  clase  publica   independiente.
+
     public static class AvailableAppointment{
         private int id;
         private Date date;

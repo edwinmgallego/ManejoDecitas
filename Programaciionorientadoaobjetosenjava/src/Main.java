@@ -11,11 +11,10 @@ public class Main {
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "1pm");
-        //se  usa  un  for each  para    leer   la lista  de  la   clase estatica.
+
         for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
-
 
 
         System.out.println();
@@ -33,8 +32,6 @@ public class Main {
         patient2.setName("Manuel");
         System.out.println(patient.getName());
         System.out.println(patient2.getName());
-
-
 
 
     }
