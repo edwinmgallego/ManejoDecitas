@@ -29,6 +29,8 @@ Por otro lado, this nos permite especificar que nuestras variables están señal
 
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
+
+
     public void addAvailableAppointment(Date date, String time){
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
@@ -37,7 +39,10 @@ Por otro lado, this nos permite especificar que nuestras variables están señal
         return availableAppointments;
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString()+"\nSpeciality: "+ speciality+ "\nAbailable: "+ availableAppointments.toString() ;
+    }
 
     public static class AvailableAppointment{
         private int id;
@@ -71,6 +76,11 @@ Por otro lado, this nos permite especificar que nuestras variables están señal
 
         public void setTime(String time) {
             this.time = time;
+        }
+
+        @Override
+        public String toString() {
+            return "AvailableAppointment{" +"\ndate =" + date + ", \ntime ='" + time + '\'' +  '}';
         }
     }
 

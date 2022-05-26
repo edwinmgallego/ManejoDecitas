@@ -14,16 +14,17 @@ public class Main {
         *  entre otros. La sobreescritura de constructores consiste en usar los miembros heredados de una
         * supreclase pero con argumentos diferentes. Recuerda que no podemos sobrescribir los métodos marcados como final o static.
         * */
+
         Doctor myDoctor = new Doctor("Anahí Salgado", "Pediatria");
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "1pm");
-
+/*
         for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
-
-
+*/
+        System.out.println(myDoctor);
         System.out.println();
         System.out.println();
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
