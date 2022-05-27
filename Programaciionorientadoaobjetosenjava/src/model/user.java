@@ -1,3 +1,4 @@
+package model;
 
 public class user {
     /*Super indica que una variable o método es de la clase padre, la superclase de cual heredan nuestras subclases,

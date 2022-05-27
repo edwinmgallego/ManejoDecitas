@@ -1,4 +1,5 @@
-import org.w3c.dom.ls.LSOutput;
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -13,9 +14,9 @@ Por otro lado, this nos permite especificar que nuestras variables están señal
     * */
     private String speciality;
 
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name,email);
-        System.out.println("El nombre del Doctor asignado es: " + name);
+        System.out.println("El nombre del model.Doctor asignado es: " + name);
         this.speciality = speciality;
     }
 

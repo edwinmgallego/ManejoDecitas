@@ -1,3 +1,5 @@
+package model;
+
 public class enumerationsdays {
     /*public enum Day {
         SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
