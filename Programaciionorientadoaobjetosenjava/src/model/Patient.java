@@ -51,4 +51,8 @@ public class Patient extends user {
     public String toString() {
         return super.toString() + "\nAge: " + birthday + "\n Weight: " +getWeight()+ "\n Height"+getHeight()+"\n Blood :"+ blood;
     }
+    public  void  showDataUser(){
+        System.out.println("PAciente");
+        System.out.println("");
+    }
 }

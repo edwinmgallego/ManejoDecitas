@@ -1,6 +1,6 @@
 package model;
 
-public class Nurse extends user{
+public abstract class Nurse extends user{
    private String speciality;
 
    public Nurse (String name, String email){

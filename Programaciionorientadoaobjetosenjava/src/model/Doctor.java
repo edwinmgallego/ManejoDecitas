@@ -44,6 +44,11 @@ Por otro lado, this nos permite especificar que nuestras variables están señal
     public String toString() {
         return super.toString()+"\nSpeciality: "+ speciality+ "\nAbailable: "+ availableAppointments.toString() ;
     }
+    @Override
+    public void showDataUser(){
+        System.out.println("hospital: cruz  roja");
+        System.out.println("Departamento: Oncologia ");
+    }
 
     public static class AvailableAppointment{
         private int id;

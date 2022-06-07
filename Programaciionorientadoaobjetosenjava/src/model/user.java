@@ -1,6 +1,6 @@
 package model;
 
-public class user {
+public abstract class user {
     /*Super indica que una variable o método es de la clase padre, la superclase de cual heredan nuestras subclases,
       solo la usamos cuando aplicamos herencia. Además, podemos llamar al constructor de la clase
       padre desde sus diferentes subclases usando super(); y enviando los argumentos que sean necesarios.
@@ -68,4 +68,7 @@ public class user {
         return "User: " + name + ", Email: "+email+
                 "\nAddreess: "+address+". Phone: "+phoneNumber;
     }
+    //creando  miembro  abstracto
+    public abstract void showDataUser();
+
 }
