@@ -1,7 +1,4 @@
-import model.Doctor;
-import model.ISchedulable;
-import model.Patient;
-import model.user;
+import model.*;
 
 import java.util.Date;
 
@@ -19,20 +16,28 @@ public class Main {
 
         user user = new Doctor("Anahi", "ana@ana.com");
         user.showDataUser();
-        user user1 =new user("Edwin","emgallego@uao.edu.co" ){
+
+        user userPa = new Patient("Anahi", "ana@ana.com");
+        userPa.showDataUser();
+
+        user user1 = new user("Anahi", "ana@ana.com") {
             @Override
-            public void showDataUser(){
-                System.out.println("hospital: cruz verde");
-                System.out.println("Departamento: pegriatria");
+            public void showDataUser() {
+                System.out.println("Doctor\n");
+                System.out.println("Hospital: Cruz Verde");
+                System.out.println("Departamento: Geriatría");
             }
         };
+
         user1.showDataUser();
-        ISchedulable iSchedulable=new ISchedulable() {
+
+        ISchedulable iSchedulable = new ISchedulable() {
             @Override
             public void schedule(Date date, String time) {
 
             }
         };
+
 
 
         /*
@@ -42,11 +47,11 @@ public class Main {
         }
         */
 
-
+        /*
         System.out.println();
         System.out.println();
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
-        System.out.println(patient);
+        System.out.println(patient);*/
 
     }
 
