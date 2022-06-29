@@ -1,6 +1,5 @@
 package ui;
 
-import model.Doctor;
 import model.Patient;
 
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import java.util.Scanner;
 
 public class UIMenu {
 
-    public static String[] MONTHS = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+    public static final String[] MONTHS = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
     public static Doctor doctorLogged;
     public static Patient patinetLogged;
 
@@ -44,12 +43,11 @@ public class UIMenu {
         }while (response != 0);
     }
 
-    //simulacion de  autennticacion
     private static void authUser(int userType){
         //userType = 1 Doctor
         //userType = 2 Patient
 
-        ArrayList<Doctor> doctors = new ArrayList<>();//vamos  a simular  como si  tuvieramos  una lista de pacientes  registrados y  creamos  una  arraylist
+        ArrayList<Doctor> doctors = new ArrayList<>();
         doctors.add(new Doctor("Alejandro Martínez", "alejandro@mail.com"));
         doctors.add(new Doctor("Karen Sosa", "kare@mail.com"));
         doctors.add(new Doctor("Rocío Gómez", "rocio@mail.com"));
